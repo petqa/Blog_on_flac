@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ entry.title }}
+    <a href="/admin/edit/{{ entry.name }}" type="button" class="btn btn-success">Edit</a>
+    <a href="/admin/delete/{{ entry.name }}" type="button" class="btn btn-danger">Delete</a>
+    </h1>
+    <pre>{{ entry.content }}</pre>
+{% endblock %}
